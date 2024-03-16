@@ -596,5 +596,7 @@ end)
 -- }}}
 
 -- Manually added autostarts
+awful.spawn("feh --bg-scale --no-fehbg /run/mount/wallpapers/violet.png")
 awful.spawn("picom -b")
+awful.spawn("dunst");
 awful.spawn("nm-applet")
