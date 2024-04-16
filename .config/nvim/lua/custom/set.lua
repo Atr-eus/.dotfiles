@@ -1,4 +1,4 @@
-vim.opt.guicursor = ""
+vim.opt.guicursor = 'n:blinkon1'
 vim.opt.nu = true
 vim.opt.rnu = true
 
