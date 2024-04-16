@@ -40,6 +40,16 @@ return {
                     end,
                 },
             })
+
+            -- band-aid for multiple encoding warn
+            lspconfig.clangd.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                cmd = {
+                    "clangd",
+                    "--offset-encoding=utf-16",
+                },
+            }
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(ev)
                     vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
