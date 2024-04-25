@@ -601,3 +601,4 @@ awful.spawn("picom -b")
 awful.spawn("dunst");
 awful.spawn("flameshot");
 awful.spawn("nm-applet")
+awful.spawn("mpd")
