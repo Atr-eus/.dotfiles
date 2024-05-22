@@ -1,0 +1,26 @@
+[env]
+TERM = "alacritty"
+
+[window]
+# opacity = 0.95
+opacity = 1.0
+
+[window.padding]
+x = 8
+y = 8
+
+[scrolling]
+multiplier = 5
+
+[font]
+size = 14
+
+[font.normal]
+# https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+family = "JetbrainsMono Nerd Font"
+
+[colors.primary]
+background = "#1e2229"
+
+[mouse]
+hide_when_typing = true
