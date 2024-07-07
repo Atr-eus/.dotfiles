@@ -6,8 +6,8 @@ TERM = "alacritty"
 opacity = 1.0
 
 [window.padding]
-x = 8
-y = 8
+x = 10
+y = 10
 
 [scrolling]
 multiplier = 5
