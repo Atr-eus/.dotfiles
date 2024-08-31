@@ -1,0 +1,10 @@
+@-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {
+  body {
+    background-image: url("wallpapers/gruvbox_astro.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position-x: center !important;
+    background-position-y: bottom !important;
+  }
+}
