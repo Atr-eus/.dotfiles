@@ -2,8 +2,8 @@
 TERM = "alacritty"
 
 [window]
-# opacity = 0.95
-opacity = 1.0
+opacity = 0.85
+# startup_mode = "Fullscreen"
 
 [window.padding]
 x = 10
