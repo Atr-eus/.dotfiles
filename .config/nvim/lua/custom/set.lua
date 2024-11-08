@@ -10,3 +10,5 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = true
 vim.opt.scrolloff = 8
+
+vim.g.maplocalleader = " "
