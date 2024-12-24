@@ -22,7 +22,9 @@ return {
 
       local luasnip = require("luasnip")
       require("luasnip.loaders.from_lua").load({ paths = "./lua/custom/code_snippets" })
-      require("luasnip.loaders.from_vscode").load()
+      require("luasnip.loaders.from_vscode").lazy_load()
+      luasnip.filetype_extend("javascriptreact", { "html" })
+      luasnip.filetype_extend("typescriptreact", { "html" })
 
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities.textDocument.completion.completionItem.snippetSupport = true
