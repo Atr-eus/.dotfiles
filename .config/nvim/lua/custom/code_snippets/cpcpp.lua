@@ -5,7 +5,7 @@ local i = ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 ls.add_snippets("cpp", {
-  s("cp", fmt([[
+  s("cpcpp", fmt([[
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
