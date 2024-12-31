@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import re
 import zipfile
 import requests
@@ -26,7 +28,7 @@ if doujin_left and doujin_middle and doujin_right:
         + doujin_middle.get_text(strip=True)
         + " "
         + doujin_right.get_text(strip=True)
-    )
+    ).strip()
 else:
     doujin_title = id
 
