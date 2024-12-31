@@ -41,6 +41,7 @@ return {
           "pyright",
           "tailwindcss",
           "ts_ls",
+          "gopls"
         },
         handlers = {
           function(server)
@@ -60,6 +61,7 @@ return {
           vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
           vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
           vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+          vim.keymap.set("n", "rn", vim.lsp.buf.rename, opts)
           vim.keymap.set("n", "ca", vim.lsp.buf.code_action, opts)
           vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
           -- vim.keymap.set('n', '<C-f>', function()
