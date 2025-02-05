@@ -41,7 +41,8 @@ return {
           "pyright",
           "tailwindcss",
           "ts_ls",
-          "gopls"
+          "gopls",
+          "jdtls"
         },
         handlers = {
           function(server)
@@ -51,6 +52,11 @@ return {
           end,
         },
       })
+
+      require 'lspconfig'.clangd.setup {
+        cmd = { "clangd", "--compile-commands-dir=build" },
+      }
+
 
       vim.api.nvim_create_autocmd("LspAttach", {
         callback = function(ev)
@@ -111,6 +117,7 @@ return {
       null_ls.setup({
         sources = {
           null_ls.builtins.formatting.prettier,
+          null_ls.builtins.formatting.black,
         },
       })
 
