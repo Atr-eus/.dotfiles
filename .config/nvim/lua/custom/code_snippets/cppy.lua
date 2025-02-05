@@ -7,14 +7,13 @@ local fmt = require("luasnip.extras.fmt").fmt
 ls.add_snippets("python", {
   s("cppy", fmt([[
 import sys
-input = sys.stdin.read
-from functools import lru_cache
+input = sys.stdin.readline
 
 def i_love_emilia():
 {}{}
 
 if __name__ == "__main__":
-    t = int(input())
+    t = int(input().strip())
     for _ in range(t):
         i_love_emilia()
 ]], {

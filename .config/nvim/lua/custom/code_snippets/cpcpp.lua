@@ -6,7 +6,7 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 ls.add_snippets("cpp", {
   s("cpcpp", fmt([[
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 typedef long long ll;
 
