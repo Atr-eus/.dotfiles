@@ -13,6 +13,9 @@ export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 export QT_STYLE_OVERRIDE=Adwaita-Dark
 export LC_ALL=en_US.UTF-8
 export MANPAGER='nvim +Man!'
+export IDF_PATH=/home/and/esp/esp-idf
+export JAVA_HOME=/usr/lib/jvm/java-23-openjdk/
+export PATH_TO_FX=/usr/lib/jvm/java-23-openjfx/lib/
 # echo "
 # "
 
