@@ -30,7 +30,7 @@ def main():
         return
 
     output_path = sys.argv[1]
-    docx = Document()
+    doc = Document(output_path)
 
     while True:
         content = input("Enter content ['q' to quit]: ")
@@ -41,9 +41,9 @@ def main():
         bold = input("Bold? [y/n] ").strip().lower() == "y"
         gap = int(input("Gap? "))
 
-        insert_content(docx, content, font_sz, bold, gap)
+        insert_content(doc, content, font_sz, bold, gap)
 
-    docx.save(output_path)
+    doc.save(output_path)
     print(f"Document saved as {output_path}")
 
 
