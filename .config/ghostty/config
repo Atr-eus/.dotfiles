@@ -50,7 +50,7 @@ theme = Ayu Mirage
 font-size = 14
 cursor-style = block
 mouse-hide-while-typing = true
-background-opacity = 0.93
+# background-opacity = 0.93
 
 window-padding-x = 7,5
 window-padding-y = 5,5
