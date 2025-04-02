@@ -10,7 +10,7 @@ ls.add_snippets("cpp", {
 using namespace std;
 typedef long long ll;
 
-void i_love_emilia() {{
+void an() {{
 {}{}
 }}
 
@@ -22,7 +22,7 @@ int main() {{
   int t;
   cin >> t;
   while (t--) {{
-    i_love_emilia();
+    an();
   }}
 }}
 ]], {
