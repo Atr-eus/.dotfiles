@@ -2,8 +2,7 @@ if status is-interactive
   set -U fish_greeting ""
   fish_vi_key_bindings
   
-  set -g -x JAVA_HOME '/usr/lib/jvm/java-23-openjdk/'
-  set -g -x PATH_TO_FX '/home/and/.openjfx/javafx-sdk-23.0.2/lib'
+  set -g -x JAVA_HOME '/usr/lib/jvm/java-21-openjdk/'
 
   # function fish_prompt
   #   set_color green
