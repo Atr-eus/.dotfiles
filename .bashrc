@@ -14,9 +14,13 @@ export QT_STYLE_OVERRIDE=Adwaita-Dark
 export LC_ALL=en_US.UTF-8
 export MANPAGER='nvim +Man!'
 export IDF_PATH=$HOME/esp/esp-idf
-export JAVA_HOME=/usr/lib/jvm/java-23-openjdk/
-export PATH_TO_FX=/usr/lib/jvm/java-23-openjfx/lib/
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk/
+export PATH_TO_FX=/usr/lib/jvm/java-21-openjfx/lib/
 export VCPKG_ROOT=$HOME/.local/share/vcpkg
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export GLFW_IM_MODULE=fcitx
+export XMODIFIERS='@im=fcitx'
 # echo "
 # "
 
