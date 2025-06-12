@@ -1,0 +1,11 @@
+term=ghostty
+location=center
+prompt=Search
+show_all=true
+gtk_dark=true
+insensitive=true
+allow_markup=true
+allow_images=true
+line_wrap=word
+no_actions=true
+hide_scroll=true
