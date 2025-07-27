@@ -53,9 +53,9 @@ return {
         },
       })
 
-      require 'lspconfig'.clangd.setup {
-        cmd = { "clangd", "--compile-commands-dir=build" },
-      }
+      -- require 'lspconfig'.clangd.setup {
+      --   cmd = { "clangd", "--compile-commands-dir=build" },
+      -- }
 
 
       vim.api.nvim_create_autocmd("LspAttach", {
