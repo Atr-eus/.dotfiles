@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term ghostty
 # Your preferred application launcher
-set $menu wmenu-run
+set $menu wofi
 
 ### Output configuration
 #
@@ -73,7 +73,7 @@ output * adaptive_sync off
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+r exec $menu
+    bindsym $mod+r exec $menu --show drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -200,7 +200,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-# bindsym $mod+r mode "resize"
+bindsym $mod+Shift+s mode "resize"
 #
 # Utilities:
 #
