@@ -6,8 +6,8 @@
   // "width": 1280, // Waybar width
   "spacing": 0, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["sway/window"],
   "modules-right": [
     // "mpd",
     // "idle_inhibitor",
@@ -23,7 +23,7 @@
     "clock",
   ],
   // Modules configuration
-  // "hyprland/workspaces": {
+  // "sway/workspaces": {
   //     "disable-scroll": true,
   //     "all-outputs": true,
   //     "warp-on-scroll": false,
@@ -39,7 +39,7 @@
   //         "default": ""
   //     }
   // },
-  "hyprland/workspaces": {
+  "sway/workspaces": {
     "format": "{icon}",
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
