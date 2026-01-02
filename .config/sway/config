@@ -164,7 +164,7 @@ output * adaptive_sync off
     # Move focus to the parent container
     bindsym $mod+a focus parent
 
-    bindsym $mod+c exec swaylock --daemonize
+    bindsym $mod+c exec swaylock --show-failed-attempts --daemonize --image /mnt/data/wallpapers/gruvbox_astro.jpg
 #
 # Scratchpad:
 #
