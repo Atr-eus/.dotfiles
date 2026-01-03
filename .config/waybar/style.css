@@ -80,6 +80,7 @@ button:hover {
 #temperature,
 #backlight,
 #network,
+#custom-net-speed,
 #pulseaudio,
 #wireplumber,
 #custom-media,
@@ -183,6 +184,10 @@ label:focus {
 
 #network {
   background-color: #2980b9;
+}
+
+#custom-net-speed {
+    background: rgba(40, 44, 52, 0.9);
 }
 
 #network.disconnected {

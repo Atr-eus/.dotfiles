@@ -169,7 +169,7 @@ def _replace_placeholders(
     "--format",
     required=False,
     type=str,
-    default="Up: %bytes_sent% Down: %bytes_recv%",
+    default="↓%bytes_recv% ↑%bytes_sent%",
     help="The output format of the result including placeholders.",
 )
 @click.option(

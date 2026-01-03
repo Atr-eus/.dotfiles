@@ -12,6 +12,7 @@
     // "mpd",
     // "idle_inhibitor",
     // "pulseaudio",
+    "custom/net-speed",
     "network",
     // "power-profiles-daemon",
     "memory",
@@ -41,8 +42,11 @@
   // },
   "sway/workspaces": {
     "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "on-scroll-up": "swaymsg workspace next",
+    "on-scroll-down": "swaymsg workspace prev",
   },
   "keyboard-state": {
     "numlock": true,
@@ -129,6 +133,11 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
+  },
+  "custom/net-speed": {
+    "exec": "python3 ~/scripts/internet_speed.py",
+    "interval": 2,
+    "format": "{}"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
