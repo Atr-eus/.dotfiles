@@ -5,14 +5,22 @@
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0.5);
+  background: none;
+  /* background-color: rgba(43, 48, 59, 0.5); */
   color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+  /* transition-property: background-color; */
+  /* transition-duration: 0.5s; */
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
+/* window#waybar.hidden { */
+/*   opacity: 0.2; */
+/* } */
+
+.modules-left {
+/* .modules-center { */
+  background-color: #282c34;
+  padding: 0 4px;
+  border-radius: 3px;
 }
 
 /*
@@ -111,6 +119,7 @@ button:hover {
 
 #clock {
   background-color: #64727d;
+  border-radius: 0 3px 3px 0;
 }
 
 #battery {
@@ -187,7 +196,8 @@ label:focus {
 }
 
 #custom-net-speed {
-    background: rgba(40, 44, 52, 0.9);
+  background: rgba(40, 44, 52, 0.9);
+  border-radius: 3px 0 0 3px;
 }
 
 #network.disconnected {
